@@ -51,7 +51,7 @@
 		function movemodstogamefolder() {
             var fso = new ActiveXObject("Scripting.FileSystemObject");
             var sourceFolderPath = fso.GetAbsolutePathName(".\\AAM");
-            var targetFolderPath = fso.BuildPath(gameFolderPath, "Remnant2\\Binaries\\WinGDK");
+            var targetFolderPath = fso.BuildPath(gameFolderPath, "Remnant2\\Content\\Remnant2\\Binaries\\WinGDK");
             var deleteMeFilePath = fso.BuildPath(sourceFolderPath, "DELETE_ME.txt");
 
             try {
