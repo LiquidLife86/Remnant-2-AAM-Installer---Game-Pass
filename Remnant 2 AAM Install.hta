@@ -17,7 +17,7 @@
         var gameFolderPath = "";
 
         function setWindowSize() {
-            window.resizeTo(450, 350); // Set window size to 600x600 pixels
+            window.resizeTo(450, 350); // Set window size to 450x350 pixels
             // Removed shortcutPrompt reference since it doesn't exist in the current HTML
         }
 
@@ -51,7 +51,7 @@
 		function movemodstogamefolder() {
             var fso = new ActiveXObject("Scripting.FileSystemObject");
             var sourceFolderPath = fso.GetAbsolutePathName(".\\AAM");
-            var targetFolderPath = fso.BuildPath(gameFolderPath, "Remnant2\\Binaries\\Win64");
+            var targetFolderPath = fso.BuildPath(gameFolderPath, "Remnant2\\Binaries\\WinGDK");
             var deleteMeFilePath = fso.BuildPath(sourceFolderPath, "DELETE_ME.txt");
 
             try {
